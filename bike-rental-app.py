@@ -6,7 +6,7 @@ import os
 # 1. Load the saved model
 
  
-os.system('pip install scikit-learn==1.6.1')
+#os.system('pip install scikit-learn==1.6.1')
 
 
 @st.cache_resource
