@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 import streamlit as st
 import numpy as np
+import joblib
 import os
 # 1. Load the saved model
 
@@ -11,8 +12,7 @@ import os
 
 @st.cache_resource
 def load_model():
-    with open('gradient_boost_model.pkl', 'rb') as file:
-        return pickle.load(file)
+    return joblib.load("gradient_boost_model.joblib")
 
 
 model = load_model()
